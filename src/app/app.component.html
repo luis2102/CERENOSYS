@@ -1,3 +1,30 @@
+
+<router-outlet></router-outlet>
+
+  <div class="wrapper fadeInDown">
+  <div id="formContent">
+
+    <div class="fadeIn first">
+      <img src="../assets/icons/logointel.png" id="icon" alt="User Icon" />
+    </div>
+    <br>
+
+    <form>
+        <h1 style="color:#f9a828" class="display-3" >CERENOSYS</h1>
+
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+      <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+      <input type="submit" class="fadeIn fourth" value="Log In" [Link]="['searchre']">
+    </form>
+
+    <div id="formFooter">
+      <a class="underlineHover" [routerLink]="['passw']">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>
+
+<!--<app-login></app-login>-->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
@@ -6,7 +33,7 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
+<!--
 <style>
   :host {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -263,7 +290,7 @@
     width: 1920px;
   }
 
-
+*/
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
 
@@ -294,8 +321,8 @@
     }
   }
 </style>
-
-<!-- Toolbar -->
+-->
+<!-- Toolbar 
 <div class="toolbar" role="banner">
   <img
     width="40"
@@ -327,8 +354,8 @@
 </div>
 
 <div class="content" role="main">
-
-  <!-- Highlight Card -->
+-->
+  <!-- Highlight Card
   <div class="card highlight-card card-small">
 
     <svg id="rocket" alt="Rocket Ship" xmlns="http://www.w3.org/2000/svg" width="101.678" height="101.678" viewBox="0 0 101.678 101.678">
@@ -348,8 +375,8 @@
     </svg>
 
   </div>
-
-  <!-- Resources -->
+ -->
+  <!-- Resources 
   <h2>Resources</h2>
   <p>Here are some links to help you get started:</p>
 
@@ -378,8 +405,8 @@
     </a>
 
   </div>
-
-  <!-- Next Steps -->
+-->
+  <!-- Next Steps
   <h2>Next Steps</h2>
   <p>What do you want to do next with your app?</p>
 
@@ -416,8 +443,8 @@
       <span>Build for Production</span>
     </div>
   </div>
-
-  <!-- Terminal -->
+ -->
+  <!-- Terminal 
   <div class="terminal" [ngSwitch]="selection.value">
       <pre *ngSwitchDefault>ng generate component xyz</pre>
       <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
@@ -425,8 +452,8 @@
       <pre *ngSwitchCase="'test'">ng test</pre>
       <pre *ngSwitchCase="'build'">ng build --prod</pre>
   </div>
-
-  <!-- Links -->
+-->
+  <!-- Links 
   <div class="card-container">
     <a class="circle-link" title="Animations" href="https://angular.io/guide/animations" target="_blank" rel="noopener">
       <svg id="Group_20" data-name="Group 20" xmlns="http://www.w3.org/2000/svg" width="21.813" height="23.453" viewBox="0 0 21.813 23.453">
@@ -504,8 +531,8 @@
       </svg>
     </a>
   </div>
-
-  <!-- Footer -->
+-->
+  <!-- Footer 
   <footer>
       Love Angular?&nbsp;
       <a href="https://github.com/angular/angular" target="_blank" rel="noopener"> Give our repo a star.
@@ -524,7 +551,7 @@
   </svg>
 
 </div>
-
+-->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
@@ -533,6 +560,3 @@
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-
-
-<router-outlet></router-outlet>
