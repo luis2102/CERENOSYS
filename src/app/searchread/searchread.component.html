@@ -1,1 +1,62 @@
-<p>searchread works!</p>
+<ngb-tabset [justify]="currentJustify">
+        <ngb-tab>
+          <ng-template ngbTabTitle>
+            <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+              <button class="btn btn-outline-primary mr-2" id="dropdownManual" ngbDropdownAnchor (focus)="myDrop.open()">Cocina</button>
+              <div ngbDropdownMenu aria-labelledby="dropdownManual">
+              <button ngbDropdownItem>Mexicana</button>
+              <button ngbDropdownItem>Italiana</button>
+              <button ngbDropdownItem>China</button>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template ngbTabContent>
+            Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+          </ng-template>
+        </ngb-tab>
+         <ngb-tab>
+          <ng-template ngbTabTitle>
+            <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+              <button class="btn btn-outline-primary mr-2" id="dropdownManual" ngbDropdownAnchor (focus)="myDrop.open()">Alimento</button>
+              <div ngbDropdownMenu aria-labelledby="dropdownManual">
+              <button ngbDropdownItem>Action - 1</button>
+              <button ngbDropdownItem>Another Action</button>
+              <button ngbDropdownItem>Something else is here</button>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template ngbTabContent>
+            Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+          </ng-template>
+        </ngb-tab>
+          <ngb-tab>
+          <ng-template ngbTabTitle>
+            <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+              <button class="btn btn-outline-primary mr-2" id="dropdownManual" ngbDropdownAnchor (focus)="myDrop.open()">Comida</button>
+              <div ngbDropdownMenu aria-labelledby="dropdownManual">
+              <button ngbDropdownItem>Action - 1</button>
+              <button ngbDropdownItem>Another Action</button>
+              <button ngbDropdownItem>Something else is here</button>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template ngbTabContent>
+            Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+          </ng-template>
+        </ngb-tab>
+          <ngb-tab>
+          <ng-template ngbTabTitle>
+            <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+              <button class="btn btn-outline-primary mr-2" id="dropdownManual" ngbDropdownAnchor (focus)="myDrop.open()">Platillo</button>
+              <div ngbDropdownMenu aria-labelledby="dropdownManual">
+              <button ngbDropdownItem>Action - 1</button>
+              <button ngbDropdownItem>Another Action</button>
+              <button ngbDropdownItem>Something else is here</button>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template ngbTabContent>
+            Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+          </ng-template>
+        </ngb-tab>
+      </ngb-tabset>
