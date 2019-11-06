@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { InforecetaComponent } from './searchread/inforeceta/inforeceta.component';
+import { InfoProveedorComponent } from './searchread/info-proveedor/info-proveedor.component';
 
 
 
@@ -22,7 +23,8 @@ import { InforecetaComponent } from './searchread/inforeceta/inforeceta.componen
     SearchreadComponent,
     SesionComponent,
     NavbarComponent,
-    InforecetaComponent
+    InforecetaComponent,
+    InfoProveedorComponent
   ],
   imports: [
     BrowserModule,

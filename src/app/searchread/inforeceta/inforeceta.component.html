@@ -1,1 +1,52 @@
-<p>inforeceta works!</p>
+<app-navbar></app-navbar>
+<br>
+<h5>Detalles Receta</h5>
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+        <ngb-panel title="Información General">
+          <ng-template ngbPanelContent>
+                - ID: 1
+                <br>- Nombre: Premium Beef Patty
+                <br>- Expiracion: 20/09/2019 
+          </ng-template>
+        </ngb-panel>
+        <ngb-panel title="Información Nutricional">
+                <ng-template ngbPanelContent>
+                        - Total Fat 19 g	29%
+                       <br> - Saturated fat 8 g	40%
+                       <br> - Polyunsaturated fat 0.9 g	
+                       <br> - Monounsaturated fat 9 g	
+                       <br> - Cholesterol 78 mg	26%
+                       <br> - Sodium 58 mg	2%
+                       <br> - Potassium 279 mg	7%
+                       <br> - Total Carbohydrate 0 g	0%
+                       <br> - Dietary fiber 0 g	0%
+                       <br> - Sugar 0 g	
+                       <br> - Protein 25 g
+                </ng-template>
+              </ngb-panel>
+        
+        <ngb-panel title="Ingredientes">
+            <ng-template ngbPanelContent>
+                    - Flour
+                    <br> - Ground Beef <ngb-highlight button class="btn btn-lg btn-outline-primary"  type="submit" color="primary" mdbWavesEffect routerLink="/infoprov" routerLinkActive="active">
+                    </ngb-highlight>
+                    <br> - Herbs
+                </ng-template>
+            </ngb-panel>
+        <ngb-panel title="Precio">
+            <ng-template ngbPanelContent>
+                    - $0.50 usd per Patty
+                </ng-template>
+            </ngb-panel>
+        <ngb-panel title="Advertencias">
+            <ng-template ngbPanelContent>
+                    - Keep Refrigerated
+                </ng-template>
+            </ngb-panel>
+        <ngb-panel title="Usado Para/En">
+                <ng-template ngbPanelContent>
+                    - Burgers
+                </ng-template>
+            </ngb-panel>
+      </ngb-accordion>
+      

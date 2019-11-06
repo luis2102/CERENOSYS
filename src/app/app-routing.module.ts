@@ -10,13 +10,15 @@ import { InforecetaComponent } from './searchread/inforeceta/inforeceta.componen
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { BrowserModule } from '@angular/platform-browser';
+import { InfoProveedorComponent } from './searchread/info-proveedor/info-proveedor.component';
  
 
 const routes: Routes = [
   { path: 'passw', component: PasswordComponent },
   { path: 'searchre', component: SearchreadComponent },
   { path: 'login', component: SesionComponent },
-  { path: 'infore', component: InforecetaComponent }
+  { path: 'infore', component: InforecetaComponent },
+  { path: 'infoprov', component: InfoProveedorComponent }
   ];
 
 @NgModule({
