@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { InforecetaComponent } from './searchread/inforeceta/inforeceta.component';
 
 
 
@@ -20,7 +21,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     PasswordComponent,
     SearchreadComponent,
     SesionComponent,
-    NavbarComponent
+    NavbarComponent,
+    InforecetaComponent
   ],
   imports: [
     BrowserModule,

@@ -11,12 +11,13 @@
   
         <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
         <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-        <input type="submit" class="fadeIn fourth" value="Log In">
+        <input type="submit" class="fadeIn fourth" value="Log In" routerLink="/searchre" routerLinkActive="active">
         <!--<input type="submit" class="fadeIn fourth" value="Log In" routerLink="/searchre">-->
       </form>
   
       <div id="formFooter">
-        <a class="underlineHover"  (click)='open()'>Forgot Password?</a>
+        <!--<a class="underlineHover" [routerLink]="['passw']">Forgot Password?</a>-->
+        <a class="underlineHover" routerLink="/passw" routerLinkActive="active">¿Olvidaste tu Contraseña?</a>
       </div>
   
     </div>

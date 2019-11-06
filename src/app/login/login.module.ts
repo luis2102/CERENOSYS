@@ -1,3 +1,4 @@
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SearchreadComponent } from './../searchread/searchread.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -10,7 +11,6 @@ import { SesionComponent } from './sesion/sesion.component';
 
 @NgModule({
   declarations: [PasswordComponent, NavbarComponent, SesionComponent],
-  imports: [CommonModule, ],
- 
+  imports: [CommonModule, NgbModule, ReactiveFormsModule, FormsModule]
 })
 export class LoginModule { }

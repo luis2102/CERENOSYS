@@ -1,5 +1,11 @@
+<app-navbar></app-navbar>
+
+          
+<div class="wrapper fadeInDown">
+        <div id="formContent">
 <ngb-tabset [justify]="currentJustify">
-        <ngb-tab>
+
+    <ngb-tab>
           <ng-template ngbTabTitle>
             <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
               <button class="btn btn-outline-primary mr-2" id="dropdownManual" ngbDropdownAnchor (focus)="myDrop.open()">Cocina</button>
@@ -65,7 +71,8 @@
         </div>
       </form>
       
-      
+
+          
       <table class="table table-striped" >
         <thead>
         <tr >
@@ -86,16 +93,22 @@
           </td>
       
          
-        <td><ngb-highlight button class="btn btn-outline-primary mr-2" type="submit" color="primary" mdbWavesEffect title="Mas Informacion"></ngb-highlight></td>
-          <!--<button mdbBtn type="submit" color="primary" mdbWavesEffect>Button</button>
+        <td><ngb-highlight button class="btn btn-lg btn-outline-primary"  type="submit" color="primary" mdbWavesEffect routerLink="/infore" routerLinkActive="active">
+                
+        </ngb-highlight></td>
+          <!--
+            <input type="submit" class="fadeIn fourth" value="Log In" routerLink="/searchre" routerLinkActive="active">  
+            <button mdbBtn type="submit" color="primary" mdbWavesEffect>Button</button>
             
             <td><ngb-highlight [result]="Receta.caducidad | number" [term]="filter.value"></ngb-highlight></td>-->
           <!--<td><ngb-highlight [result]="Receta.population | number" [term]="filter.value"></ngb-highlight></td>-->
         </tr>
         </tbody>
       </table>
-      
+
           </ng-template>
         </ngb-tab>
       </ngb-tabset>
-      
+    
+    </div>
+</div>

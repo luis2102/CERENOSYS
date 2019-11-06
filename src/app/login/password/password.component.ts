@@ -9,7 +9,8 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class PasswordComponent implements OnInit {
 
-  constructor(public activeModal: NgbActiveModal) {}
+  /*constructor(public activeModal: NgbActiveModal) {}*/
+
 
   ngOnInit() {
   }

@@ -10,17 +10,17 @@ import { PasswordComponent } from '../password/password.component';
   styleUrls: ['./sesion.component.css']
 })
 export class SesionComponent implements OnInit {
-
-  /*constructor(private modalService: NgbModal, public activeModal: NgbActiveModal) { }*/
-
-  ngOnInit() {
-  }
-
 /*
+  constructor(private modalService: NgbModal, public activeModal: NgbActiveModal) { }
   open(){
     this.modalService.open(PasswordComponent);
     this.activeModal.close();
   }
+*/
+  ngOnInit() {
+  }
 
-  */
+
+
+  
 }
