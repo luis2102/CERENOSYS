@@ -11,7 +11,7 @@
             </div>
           </ng-template>
           <ng-template ngbTabContent>
-            Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+         
           </ng-template>
         </ngb-tab>
          <ngb-tab>
@@ -19,14 +19,15 @@
             <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
               <button class="btn btn-outline-primary mr-2" id="dropdownManual" ngbDropdownAnchor (focus)="myDrop.open()">Alimento</button>
               <div ngbDropdownMenu aria-labelledby="dropdownManual">
-              <button ngbDropdownItem>Action - 1</button>
-              <button ngbDropdownItem>Another Action</button>
-              <button ngbDropdownItem>Something else is here</button>
+              <button ngbDropdownItem>Desayuno</button>
+              <button ngbDropdownItem>Comida</button>
+              <button ngbDropdownItem>Cena</button>
+              <button ngbDropdownItem>Postre</button>
               </div>
             </div>
           </ng-template>
           <ng-template ngbTabContent>
-            Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+            
           </ng-template>
         </ngb-tab>
           <ngb-tab>
@@ -34,14 +35,15 @@
             <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
               <button class="btn btn-outline-primary mr-2" id="dropdownManual" ngbDropdownAnchor (focus)="myDrop.open()">Comida</button>
               <div ngbDropdownMenu aria-labelledby="dropdownManual">
-              <button ngbDropdownItem>Action - 1</button>
-              <button ngbDropdownItem>Another Action</button>
-              <button ngbDropdownItem>Something else is here</button>
+              <button ngbDropdownItem>Pescados</button>
+              <button ngbDropdownItem>Carnes</button>
+              <button ngbDropdownItem>Ensaladas</button>
+              <button ngbDropdownItem>Snacks</button>
               </div>
             </div>
           </ng-template>
           <ng-template ngbTabContent>
-            Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+            
           </ng-template>
         </ngb-tab>
           <ngb-tab>
@@ -49,14 +51,51 @@
             <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
               <button class="btn btn-outline-primary mr-2" id="dropdownManual" ngbDropdownAnchor (focus)="myDrop.open()">Platillo</button>
               <div ngbDropdownMenu aria-labelledby="dropdownManual">
-              <button ngbDropdownItem>Action - 1</button>
-              <button ngbDropdownItem>Another Action</button>
-              <button ngbDropdownItem>Something else is here</button>
+              <button ngbDropdownItem>Proteina</button>
+              <button ngbDropdownItem>Fruta</button>
+              <button ngbDropdownItem>Vegetales</button>
               </div>
             </div>
           </ng-template>
           <ng-template ngbTabContent>
-            Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                
+      <form>
+        <div class="form-group form-inline">
+           Busqueda: <input class="form-control ml-2" type="text" [formControl]="filter"/>
+        </div>
+      </form>
+      
+      
+      <table class="table table-striped" >
+        <thead>
+        <tr >
+          <th scope="col" >ID</th>
+          <th scope="col">Ingrediente</th>
+          <!--<th scope="col">Caducidad</th>-->
+          <!--<th scope="col">P</th>-->
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let Receta of recetas$ | async" >
+           <td>
+           <ngb-highlight [result]="Receta.id" [term]="filter.value"></ngb-highlight>
+          </td>
+          <td>
+            <!--<img [src]="'https://upload.wikimedia.org/wikipedia/commons/' + Receta.flag" class="mr-2" style="width: 20px">-->
+            <ngb-highlight [result]="Receta.ingrediente" [term]="filter.value"></ngb-highlight>
+          </td>
+      
+         
+        <td><ngb-highlight button class="btn btn-outline-primary mr-2" type="submit" color="primary" mdbWavesEffect title="Mas Informacion"></ngb-highlight></td>
+          <!--<button mdbBtn type="submit" color="primary" mdbWavesEffect>Button</button>
+            
+            <td><ngb-highlight [result]="Receta.caducidad | number" [term]="filter.value"></ngb-highlight></td>-->
+          <!--<td><ngb-highlight [result]="Receta.population | number" [term]="filter.value"></ngb-highlight></td>-->
+        </tr>
+        </tbody>
+      </table>
+      
           </ng-template>
         </ngb-tab>
       </ngb-tabset>
+      
